@@ -58,12 +58,15 @@ console.log(sumArray(totalArray)) // Output sum of all elements = 110
 
 
 // 7) Write a function named ‘sortArray’ that takes an array of numbers and returns a new array sorted in ascending order.
-const arrNumber = [10, 20, 1, 30, 40, 0, 50 , 55]
+const arrNumber = [10, 20, 1, 30, 40, 0, 50 , 55,-1,-3,-2,-5,-100];
 function sortArray(arr){
-    return arr.sort()
+    return arr.sort((a, b) => a - b);
 }
-console.log(sortArray(arrNumber)) // Output [ 0,  1, 10, 20,30, 40, 50, 55 ]
-   
+
+console.log(sortArray(arrNumber));
+ 
+// Output [ 0,  1, 10, 20,30, 40, 50, 55 ]
+
 
 // 8) Write a function named ‘capitalizeFirstLetter’ that takes a string and returns the same string with the first letter capitalized. Ex-  console.log(capitalizeFirstLetter("hello"));  // Output:  "Hello"
 
